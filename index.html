@@ -10,26 +10,25 @@
 </head>
 
 <body>
+    <nav id="navbar">
+        <header>
+            <H1>The Python Tutorial</H1>
+            <nav id="navbar">
+                <a href="#An_Informal_Introduction_to_Python" class="nav-link"> An Informal Introduction to Python</a>
+                <a href="#Using_Python_as_a_Calculator" class="nav-link"> Using Python as a Calculator </a>
+                <a href="#numbers" class="nav-link"> Numbers </a></p>
+                <a href="#Strings" class="nav-link"> Strings</a>
+                <a href="#Lists" class="nav-link"> Lists</a>
+                <a href="#First_Steps" class="nav-link">First Steps</a>
+                <a href="#if_Statements" class="nav-link">if Statements</a>
+                <a href="#for_Statements" class="nav-link"> for Statements</a>
+                <a href="#The_Range" class="nav-link">The range() Function</a>
+                <a href="#break" class="nav-link"> Break and continue Statements</a>
+        </header>
+    </nav>
     <main id="main-doc">
-        <section class="main-section">
-            <header>
-                <H1>The Python Tutorial</H1>
-                <nav id="navbar">
-                <p> <a href="#Informal_Intro"> An Informal Introduction to Python</a></p>
-                <p> <a href="#using_Pathon"> Using Python as a Calculator </a></p>
-                <p> <a href="#numbers"> Numbers </a></p>
-                <p> <a href="#Strings"> Strings</a></p>
-                <p> <a href="#Lists"> Lists</a></p>
-                <p>First Steps</p>
-                <p>if Statements</p>
-                <p>for Statements</p>
-                <p>The range() Function</p>
-                <p>break and continue Statements, and else Clauses on Loops¶</p>
-                </nav>
-            </header>
-        </section>
-        <section class="main-section" id="#Informal_Intro">
-            <h3>An Informal Introduction to Python</h3>
+        <section class="main-section" id="An_Informal_Introduction_to_Python">
+            <header >An Informal Introduction to Python</header>
             <p>In the following examples, input and output are distinguished by the presence or absence of prompts (>>>
                 and …): to repeat the example, you must type everything after the prompt, when the prompt appears; lines
                 that do not begin with a prompt are output from the interpreter. Note that a secondary prompt on a line
@@ -43,67 +42,69 @@
                 comment may appear at the start of a line or following whitespace or code, but not within a string
                 literal. A hash character within a string literal is just a hash character. Since comments are to
                 clarify code and are not interpreted by Python, they may be omitted when typing in examples.
+            </p> <br>
+            <h4><b>Some examples:</b></h4> <br>
+            <p id="example">
+                # this is the first comment <br>
+                spam = 1 # and this is the second comment <br>
+                # ... and now a third! <br>
+                text = "# This is not a comment because it's inside quotes."
             </p>
-            <h4>Some examples:</h4>
-                    <p id="example">
-                        # this is the first comment <br>
-                        spam = 1 # and this is the second comment <br>
-                        # ... and now a third! <br>
-                        text = "# This is not a comment because it's inside quotes."
-                    </p>
         </section>
-        <section class="main-section" id="#using_Pathon">
-            <h4>
+        <section class="main-section" class="nav-link" id="Using_Python_as_a_Calculator" >
+            <header >
                 Using Python as a Calculator
-            </h4>
+            </header>
             <p>
                 Let’s try some simple Python commands. Start the interpreter and wait for the primary prompt, >>>. (It
                 shouldn’t take long.)
             </p>
         </section>
-        <section class="main-section" id="#numbers">
-        <h4>
-            Numbers
-        </h4>
-        <ul>
-            <li>>>> 2 + 2</li>
-            <li>4</li> 
-            <li>>>> 50 - 5*6</li>  
-            <li>20 </li> 
-            <li>>>> (50 - 5*6) / 4</li>
-            <li>5.0</li> 
-            <li>>>> 8 / 5 # division always returns a floating point number</li> 
-            <li>1.6</li>
-        </ul>
-        <p>
-            The integer numbers (e.g. 2, 4, 20) have type int, the ones with a fractional part (e.g. 5.0, 1.6) have type
-            float. We will see more about numeric types later in the tutorial. <br>
+        <section class="main-section" id="numbers" >
+            <header >
+                Numbers
+            </header>
+            <ul>
+                <li>>>> 2 + 2</li>
+                <li>4</li>
+                <li>>>> 50 - 5*6</li>
+                <li>20 </li>
+                <li>>>> (50 - 5*6) / 4</li>
+                <li>5.0</li>
+                <li>>>> 8 / 5 # division always returns a floating point number</li>
+                <li>1.6</li>
+            </ul> <br> 
+            <img    src="">
+            <p>
+                The integer numbers (e.g. 2, 4, 20) have type int, the ones with a fractional part (e.g. 5.0, 1.6) have
+                type
+                float. We will see more about numeric types later in the tutorial. <br>
 
-            Division (/) always returns a float. To do floor division and get an integer result (discarding any
-            fractional result) you can use the // operator; to calculate the remainder you can use %:
-        </p>
-        <p>
-            >>> 17 / 3 # classic division returns a float <br>
-            5.666666666666667 <br>
-            >>> <br>
-            >>> 17 // 3 # floor division discards the fractional part
-            5 <br>
-            >>> 17 % 3 # the % operator returns the remainder of the division <br>
-            2 <br>
-            >>> 5 * 3 + 2 # floored quotient * divisor + remainder <br>
-            17 <br>
-        </p>
+                Division (/) always returns a float. To do floor division and get an integer result (discarding any
+                fractional result) you can use the // operator; to calculate the remainder you can use %:
+            </p> <br>
+            <p id="example">
+                >>> 17 / 3 # classic division returns a float <br>
+                5.666666666666667 <br>
+                >>> <br>
+                >>> 17 // 3 # floor division discards the fractional part
+                5 <br>
+                >>> 17 % 3 # the % operator returns the remainder of the division <br>
+                2 <br>
+                >>> 5 * 3 + 2 # floored quotient * divisor + remainder <br>
+                17 <br>
+            </p>
         </section>
-        <section class="main-section" id="Strings" > </a>
-            <h4><a href="#Strings">
+        <section class="main-section"  id="Strings"> </a>
+            <header>
                 Strings
-            </a></h4>
+            </header>
             <p>
                 Besides numbers, Python can also manipulate strings, which can be expressed in several ways. They can be
                 enclosed in single quotes ('...') or double quotes ("...") with the same result 2. \ can be used to
                 escape quotes:
-            </p>
-            <p>
+            </p> <br>
+            <p id="example">
                 >>> 'spam eggs' # single quotes <br>
                 'spam eggs' <br>
                 >>> 'doesn\'t' # use \' to escape the single quote... <br>
@@ -116,7 +117,7 @@
                 '"Yes," they said.' <br>
                 >>> '"Isn\'t," they said.' <br>
                 '"Isn\'t," they said.' <br>
-            </p>
+            </p> <br>
             <p>
                 In the interactive interpreter, the output string is enclosed in quotes and special characters are
                 escaped with backslashes. While this might sometimes look different from the input (the enclosing quotes
@@ -124,112 +125,38 @@
                 contains a single quote and no double quotes, otherwise it is enclosed in single quotes. The print()
                 function produces a more readable output, by omitting the enclosing quotes and by printing escaped and
                 special characters:
-            </p>
+            </p> <br>
         </section>
-        <section class="main-section" id="#Lists" <h4>
-            Lists
-            </h4>
+        <section class="main-section" id="Lists">
+            <header >
+                Lists
+            </header>
             <p>
                 Python knows a number of compound data types, used to group together other values. The most versatile is
                 the list, which can be written as a list of comma-separated values (items) between square brackets.
                 Lists might contain items of different types, but usually the items all have the same type.
-            </p>
-            <p>
+            </p> <br>
+            <p id="example">
                 >>> squares = [1, 4, 9, 16, 25] <br>
                 >>> squares <br>
                 [1, 4, 9, 16, 25] <br>
             </p>
-            <section class="main-section" id="First_Steps">
-                <h4>
+        </section>
+        <section class="main-section" id="First_Steps_Towards_Programming" >
+                <header >
                     First Steps Towards Programming
-                </h4>
+                </header>
                 <p>
                     Of course, we can use Python for more complicated tasks than adding two and two together. For
                     instance,
                     we can write an initial sub-sequence of the Fibonacci series as follows:
-                </p>
-                <p>
+                </p> <br>
+                <p id="example">
                     >>> # Fibonacci series: <br>
                     ... # the sum of two elements defines the next <br>
                     ... a, b = 0, 1 <br>
                     >>> while a < 10: ... print(a) ... a, b=b, a+b ... 0 <br> 1 <br> 1 <br> 2 <br> 3 <br> 5 <br> 8 </p>
-            </section>
-            <section class="main-section" id="for_Statements">
-                <h4>
-                    for Statements
-                </h4>
-                <p>
-                    The for statement in Python differs a bit from what you may be used to in C or Pascal. Rather than
-                    always iterating over an arithmetic progression of numbers (like in Pascal), or giving the user the
-                    ability to define both the iteration step and halting condition (as C), Python’s for statement
-                    iterates over the items of any sequence (a list or a string), in the order that they appear in the
-                    sequence. For example (no pun intended):
-                </p>
-                <p>
-                    >>> # Measure some strings: <br>
-                    ... words = ['cat', 'window', 'defenestrate'] <br>
-                    >>> for w in words: <br>
-                    ... print(w, len(w)) <br>
-                    ... <br>
-                    cat 3 <br>
-                    window 6 <br>
-                    defenestrate 12 br
-                </p>
-            </section>
-            <section class="main-section" id="">
-                <h4>
-                    The range() Function
-                </h4>
-                <p>
-                    If you do need to iterate over a sequence of numbers, the built-in function range() comes in handy.
-                    It generates arithmetic progressions:
-                </p>
-                <p>
-                    >>> for i in range(5): <br>
-                    ... print(i) <br>
-                    ... <br>
-                    0 <br>
-                    1 <br>
-                    2 <br>
-                    3 <br>
-                    4 <br>
-                </p>
-            </section>
-            <section class="main-section" id="break">
-                <h4>
-                    break and continue Statements, and else Clauses on Loops
-                </h4>
-                <p>
-                    The break statement, like in C, breaks out of the innermost enclosing for or while loop. <br>
-
-                    Loop statements may have an else clause; it is executed when the loop terminates through exhaustion
-                    of the iterable (with for) or when the condition becomes false (with while), but not when the loop
-                    is terminated by a break statement. This is exemplified by the following loop, which searches for
-                    prime numbers:
-                </p>
-                <p>
-                    >>> for n in range(2, 10): <br>
-                    ...     for x in range(2, n): <br>
-                    ...         if n % x == 0: <br>
-                    ...             print(n, 'equals', x, '*', n//x) <br>
-                    ...             break <br>
-                    ...     else: <br>
-                    ...         # loop fell through without finding a factor <br>
-                    ...         print(n, 'is a prime number') <br>
-                    ... <br>
-                    2 is a prime number <br>
-                    3 is a prime number <br>
-                    4 equals 2 * 2 <br>
-                    5 is a prime number <br>
-                    6 equals 2 * 3 <br>
-                    7 is a prime number <br>
-                    8 equals 2 * 4 <br>
-                    9 equals 3 * 3 <br>
-                </p>
-            </section>
-
+        </section>
     </main>
-
 </body>
-
 </html>
