@@ -1,9 +1,52 @@
 *{
     padding: 0%;
     margin: 0%;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body{
-    display: flex;
+    display: grid;
+    grid-template-columns: 25% 75%;
 }
+
+#navbar{
+    background-color: aqua;
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    padding: 1.5% 1%;
+    font-size: 1.8em;
+}
+
+#main-doc{
+    background-color: aliceblue;
+    padding: 2%;
+    grid-template-columns: 2;
+    position: absolute;
+    margin-left: 25%;
+}
+
+li{
+    list-style-type: none;
+}
+
+.example{ 
+    padding: 2%;
+    width: 30%;
+    background-color: brown;
+}
+
+p{
+    font-size: 1.2em;
+}
+
+header{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+@media (max-width: 480px) {
+    .navbar {
+      font-size: 2em;
+    }
+  }
